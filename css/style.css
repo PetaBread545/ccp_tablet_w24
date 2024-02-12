@@ -165,7 +165,7 @@ p{
 
 .active{
     font-weight: bold;
-    text-decoration: underline;
+    text-transform: uppercase;
     background-color: #2D2D2D;
 }
 
