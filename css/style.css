@@ -351,27 +351,14 @@ iframe {
         height:50px;
         margin:2%;
     }
-    .skip {
-        position: absolute;
-        left: -10000px;
-        top: auto;
-        overflow: hidden;
-      }
-    
-    .skip:focus{
-        position: absolute;
-        left:10px;
-        top:0px;
-        width: auto;
-        height: auto;
+    .foodPic{
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
     }
+    .index{
+        margin-bottom: 2%;
+    }
+
 }
 
-.foodPic{
-    height: 300px;
-    width: 300px;
-    object-fit: cover;
-}
-.index{
-    margin-bottom: 2%;
-}
