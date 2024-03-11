@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/html5reset.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
     <title>Pets</title>
 </head>
 <body>
@@ -46,8 +46,6 @@
                     <li>Belly rubs</li>
                     <li>Playing tug-of-war</li>
                     <li>Sneaking onto the couch</li>
-                    <li>Long walks</li>
-                    <li>Lots of attention</li>
                 </ul>
             </div>
                 <!-- Jackie Wolf -->
@@ -72,8 +70,6 @@
                     <li>Walks</li>
                     <li>Food of any kind</li>
                     <li>Barking out the window</li>
-                    <li>Watching my mom cook</li>
-                    <li>Sleeping on the bed</li>
                 </ul>
             </div>
         </div>
@@ -95,9 +91,7 @@
                 <ul class="likeList">
                     <li>Chin scratches</li>
                     <li>Play hunting</li>
-                    <li>Perching up in high places</li>
-                    <li>Hiding in obvious spots</li>
-                    <li>Meowing at night</li>
+                    <li>Perching in high places</li>
                 </ul>
             </div>
         </div>
@@ -120,7 +114,6 @@
                     <li>Walks</li>
                     <li>Car rides</li>
                     <li>Chasing cats</li>
-                    <li>Running up and down the stairs</li>
                 </ul>
             </div>
         </div>
@@ -147,26 +140,18 @@
                 </ul>
             </div>
         </div>
-        <div class="rotateButtons">
-            <button onclick="showNextSection(0)"> &#60;-- Previous</button>
-            <button onclick="showNextSection(1)"> Next --&#62;</button>
-        </div>
+        <button onclick="showNextSection()"> left</button>
+        <button onclick="showNextSection()"> right</button>
         </div>
     </main>
     <script>
         let currentSectionIndex = 0;
         const sections = document.querySelectorAll('.contentSection');
 
-        function showNextSection(direction) {
-            if (direction == 1){
-                sections[currentSectionIndex].classList.remove('activeSection');
-                currentSectionIndex = (currentSectionIndex + 1) % sections.length;
-                sections[currentSectionIndex].classList.add('activeSection');
-            } else{
-                sections[currentSectionIndex].classList.remove('activeSection');
-                currentSectionIndex = (currentSectionIndex - 1 + sections.length) % sections.length;
-                sections[currentSectionIndex].classList.add('activeSection');
-            }   
+        function showNextSection() {
+            sections[currentSectionIndex].classList.remove('activeSection');
+            currentSectionIndex = (currentSectionIndex + 1) % sections.length;
+            sections[currentSectionIndex].classList.add('activeSection');
         }
     </script>
 

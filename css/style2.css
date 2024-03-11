@@ -23,13 +23,6 @@ a{
     color:aliceblue;
 }
 
-.likes h3{
-    margin:auto;
-}
-.likes ul{
-    margin: 4%;
-}
-
 h3{
     font-size: 20px;
     text-align: center;
@@ -71,7 +64,6 @@ img{
 
 video{
     width: 250px;
-    height: 225px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -82,7 +74,6 @@ video{
     margin-top: 5px;
     margin-bottom: 5px;
     padding:2px;
-    object-fit: cover;
 }
 
 
@@ -196,9 +187,6 @@ p{
     border-radius: 6px;
     
 }
-button{
-    display: none; 
-}
 
 .navBar{
     display: block;
@@ -256,8 +244,6 @@ iframe {
     list-style:none;
 }
 
-
-
 .skip {
     position: absolute;
     left: -10000px;
@@ -282,20 +268,13 @@ iframe {
         bottom: 0px;
         width:100%;
         border-radius: 0px;
-        
     }
     .navigation{
-        height:50px;
+        height:35px;
         flex-direction: row;
         border-radius: 0px;
         margin:0px 0px;
     }
-    .navBar{
-        padding-top:auto;
-        padding-bottom: auto;
-        font-size:24px;
-    }
-
     .imgGrid{
         display:grid;
         grid-template-columns: 1fr 1fr;
@@ -307,25 +286,13 @@ iframe {
     .imgGrid p{
         grid-column: 2/3;
         margin:auto;
-        margin-left:20px;
-        margin-right:20px;
     }
     .photo_gallery{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-    .photo_gallery img, video{
-        margin-top:15px;
-    }
     #maxAndFox{
         display:grid;
-        grid-column: 1/2;
         grid-template-columns: 1fr 1fr;
-    }
-    #maxAndFox:first-child{
-        grid-column: 2/3;
-    }
-    #maxAndFox:nth-child(2){
-        grid-column: 1/2;
     }
     .contentSection{
         display:none;
@@ -333,25 +300,4 @@ iframe {
     .activeSection{
         display:block;
     }
-    .rotateButtons{
-        position:fixed;
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        width:100%;
-        bottom:75px;
-    }
-
-    button{
-        display:block;
-        border-radius:3px;
-        border-width:2px;
-        border-color:aliceblue;
-        background-color:#2B2B2B;
-        color:aliceblue;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 20px;
-        height:50px;
-        margin:2%;
-    }
-    
 }
