@@ -14,7 +14,7 @@
             <a class ="skip" href = "#main">Skip to Main Content</a>
 			<ul class="navigation">
 				<li class="navBar"><a href = "index.html">About</a></li>
-				<li class="navBar active"><a href ="travel.html">Travel</a></li>
+				<li class="active navBar">Travel</li>
 				<li class="navBar"><a href="pets.html">Pets</a></li>
 				<li class="navBar"><a href = "recipes.html">Recipes</a></li>
 			</ul>
@@ -22,8 +22,8 @@
 	</header>
     <main id="main">
         <h1>Travel</h1>
-
-        <div class="contentSection">
+        <div class="scrollContent">
+        <div class="contentSection activeSection">
             <h2>Bali, Indonesia</h2>
             <img src="images/bali1.jpg" width = "500" alt="Beautiful traditional architecture in Bali">
             <p><strong>Location: </strong> South-east Asia</p>
@@ -64,7 +64,12 @@
                 <img src="images/yose4.jpg" width = "400" alt="Yosemite Valley">
             </div>
         </div>
+            <div class="rotateButtons">
+                <button onclick="showNextSection(0)"> &#60;-- Previous</button>
+                <button onclick="showNextSection(1)"> Next --&#62;</button>
+            </div>
+        </div>
     </main>
-    
+    <script src="script.js"></script>
 </body>
 </html>
